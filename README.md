@@ -599,7 +599,7 @@ Returns all the reviews that belong to a spot specified by id.
 * Require Authentication: false
 * Request
   * Method: GET
-  * URL: '/:spotId/reviews' //spotId instead of id
+  * URL: '/reviews/:spotId'
   * Body: none
 
 * Successful Response
@@ -652,7 +652,7 @@ Create and return a new review for a spot specified by id.
 * Require Authentication: true
 * Request
   * Method: POST
-  * URL: '/:spotId/reviews/new'
+  * URL: '/reviews/:spotId/new'
   * Headers:
     * Content-Type: application/json
   * Body:
@@ -733,7 +733,7 @@ Update and return an existing review.
 * Require proper authorization: Review must belong to the current user
 * Request
   * Method: PUT
-  * URL: '/:spotId/reviews/:reviewId/edit'
+  * URL: '/reviews/:reviewId/edit'
   * Headers:
     * Content-Type: application/json
   * Body:
@@ -801,7 +801,7 @@ Delete an existing review.
 * Require proper authorization: Review must belong to the current user
 * Request
   * Method: DELETE
-  * URL: '/:spotId/reviews/:reviewId'
+  * URL: '/reviews/:reviewId/delete'
   * Body: none
 
 * Successful Response
