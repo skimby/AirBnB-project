@@ -291,7 +291,7 @@ Returns the details of a spot specified by its id.
 * Require Authentication: false
 * Request
   * Method: GET
-  * URL: '/spot/:id'
+  * URL: '/:spotId'
   * Body: none
 
 * Successful Response
@@ -348,7 +348,7 @@ Creates and returns a new spot.
 * Require Authentication: true
 * Request
   * Method: POST
-  * URL: '/spot/new'
+  * URL: '/spots/new'
   * Headers:
     * Content-Type: application/json
   * Body:
@@ -423,7 +423,7 @@ Updates and returns an existing spot.
 * Require proper authorization: Spot must belong to the current user
 * Request
   * Method: PUT
-  * URL: '/spot/:id/edit'
+  * URL: '/spots/:spotId/edit'
   * Headers:
     * Content-Type: application/json
   * Body:
@@ -511,7 +511,7 @@ Deletes an existing spot.
 * Require proper authorization: Spot must belong to the current user
 * Request
   * Method: DELETE
-  * URL: 'spot/:id/delete'
+  * URL: 'spots/:spotId/delete'
   * Body: none
 
 * Successful Response
