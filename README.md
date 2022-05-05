@@ -50,7 +50,7 @@ Returns the information about the current user that is logged in.
 * Require Authentication: true
 * Request
   * Method: GET
-  * URL: '/:id'
+  * URL: '/:userId'
   * Body: none
 
 * Successful Response
@@ -76,7 +76,7 @@ information.
 * Require Authentication: false
 * Request
   * Method: GET
-  * URL: '/:id'
+  * URL: '/:userId'
   * Headers:
     * Content-Type: application/json
   * Body:
@@ -142,7 +142,7 @@ user's information.
 * Require Authentication: false
 * Request
   * Method: POST
-  * URL: '/:id'
+  * URL: '/:userId'
   * Headers:
     * Content-Type: application/json
   * Body:
@@ -837,7 +837,7 @@ Return all the bookings that the current user has made.
 * Require Authentication: true
 * Request
   * Method: GET
-  * URL: '/'
+  * URL: '/:userId/bookings'
   * Body: none
 
 * Successful Response
