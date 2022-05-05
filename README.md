@@ -1286,8 +1286,10 @@ Return spots filtered by query parameters.
 
 * Require Authentication: false
 * Request
-  * Method: ?
-  * URL: ?
+  * Method: GET
+  * URL: '/spots?key1=value1?key2=value2'
+    ex: '/spots?page=1?size=1'
+    ex: '/spots?minLat=1?maxLat=1'
   * Query Parameters
     * page: integer, minimum: 0, maximum: 10, default: 0
     * size: integer, minimum: 0, maximum: 20, default: 20
