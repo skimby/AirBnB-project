@@ -291,7 +291,7 @@ Returns the details of a spot specified by its id.
 * Require Authentication: false
 * Request
   * Method: GET
-  * URL: '/:spotId'
+  * URL: '/spots/:spotId'
   * Body: none
 
 * Successful Response
