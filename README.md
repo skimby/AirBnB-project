@@ -2,6 +2,9 @@
 
 ## Database Schema Design
 
+<!-- ![AirBnb Database Schema]() -->
+
+
 `<insert database schema design here>`
 
 ## API Documentation
