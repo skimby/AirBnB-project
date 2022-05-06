@@ -50,7 +50,7 @@ Returns the information about the current user that is logged in.
 * Require Authentication: true
 * Request
   * Method: GET
-  * URL: '/:userId'
+  * URL: '/users/:userId'
   * Body: none
 
 * Successful Response
@@ -76,7 +76,7 @@ information.
 * Require Authentication: false
 * Request
   * Method: GET
-  * URL: '/:userId'
+  * URL: '/users/:userId'
   * Headers:
     * Content-Type: application/json
   * Body:
@@ -142,7 +142,7 @@ user's information.
 * Require Authentication: false
 * Request
   * Method: POST
-  * URL: '/:userId'
+  * URL: '/users/:userId'
   * Headers:
     * Content-Type: application/json
   * Body:
@@ -1287,7 +1287,7 @@ Return spots filtered by query parameters.
 * Require Authentication: false
 * Request
   * Method: GET
-  * URL: '/spots?key1=value1?key2=value2'
+  * URL: '/spots?key1=value1?key2=value2?'
     ex: '/spots?page=1?size=1'
     ex: '/spots?minLat=1?maxLat=1'
   * Query Parameters
