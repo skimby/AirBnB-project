@@ -547,7 +547,7 @@ Returns all the reviews written by the current user.
 * Require Authentication: true
 * Request
   * Method: GET
-  * URL: '/reviews/:userId' '/me/reviews' *** bc ids shouldnt come after reviews unless its a reviewId
+  * URL: '/me/reviews'
   * Body: none
 
 * Successful Response
@@ -801,7 +801,7 @@ Delete an existing review.
 * Require proper authorization: Review must belong to the current user
 * Request
   * Method: DELETE
-  * URL: '/reviews/:reviewId' '/me/reviews/:reviewId' ***
+  * URL: '/me/reviews/:reviewId'
   * Body: none
 
 * Successful Response
@@ -837,7 +837,7 @@ Return all the bookings that the current user has made.
 * Require Authentication: true
 * Request
   * Method: GET
-  * URL: '/bookings/:userId' 'me/bookings' *** same as above, since we want whatever follows bookings to be a bookingID not userId
+  * URL: 'me/bookings'
   * Body: none
 
 * Successful Response
@@ -951,7 +951,7 @@ Create and return a new booking from a spot specified by id.
 * Require proper authorization: Spot must NOT belong to the current user
 * Request
   * Method: POST
-  * URL: 'spots/:spotId/booking' ***
+  * URL: 'spots/:spotId/bookings'
   * Body: none
 
 * Successful Response
@@ -1142,7 +1142,7 @@ Create and return a new image for a spot specified by id.
 * Require proper authorization: Spot must belong to the current user
 * Request
   * Method: PUT
-  * URL: '/spots/:spotId/images' ***
+  * URL: '/spots/:spotId/images'
   * Headers:
     * Content-Type: application/json
   * Body:
@@ -1189,7 +1189,7 @@ Create and return a new image for a review specified by id.
 * Require proper authorization: Review must belong to the current user
 * Request
   * Method: POST
-  * URL: '/reviews/:reviewId/images' ***
+  * URL: '/reviews/:reviewId/images'
   * Headers:
     * Content-Type: application/json
   * Body:
