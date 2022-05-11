@@ -252,7 +252,7 @@ Returns all the spots owned (created) by the current user.
 * Require Authentication: true
 * Request
   * Method: GET
-  * URL: '/spots/:ownerId'
+  * URL: '/spots'
   * Body: none
 
 * Successful Response
@@ -547,7 +547,7 @@ Returns all the reviews written by the current user.
 * Require Authentication: true
 * Request
   * Method: GET
-  * URL: '/me/reviews'
+  * URL: '/reviews'
   * Body: none
 
 * Successful Response
@@ -801,7 +801,7 @@ Delete an existing review.
 * Require proper authorization: Review must belong to the current user
 * Request
   * Method: DELETE
-  * URL: '/me/reviews/:reviewId'
+  * URL: '/reviews/:reviewId'
   * Body: none
 
 * Successful Response
